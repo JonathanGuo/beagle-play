@@ -1,0 +1,88 @@
+{
+  "_beagleComponent_": "beagle:screenComponent",
+  "child": {
+    "_beagleComponent_": "custom:pageLayout",
+    "children": [
+      {
+        "_beagleComponent_": "custom:banner",
+        "skipLinkTitle": "Banner",
+        "height": "100",
+        "children": [
+          {
+            "_beagleComponent_": "custom:navigation",
+            "label": "site",
+            "items": [
+              {
+                "type": "PrimaryButton",
+                "children": "Home"
+              },
+              {
+                "type": "PrimaryDropdownButton",
+                "children": "Work"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "_beagleComponent_": "custom:content",
+        "children": [
+          {
+            "_beagleComponent_": "custom:grid",
+            "spacing": "comfortable",
+            "children": [
+              {
+                "_beagleComponent_": "custom:gridColumn",
+                "children": [
+                  {
+                    "_beagleComponent_": "beagle:text",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dolor eros, iaculis et turpis ut, hendrerit scelerisque neque. Nunc congue, elit in pulvinar mattis, sapien dui pulvinar diam, at faucibus ligula ante ut elit. Ut feugiat libero ac accumsan ullamcorper. Praesent non euismod purus, vitae egestas risus. Curabitur rutrum finibus orci, non aliquam diam tincidunt mollis. Nunc sodales mauris sit amet iaculis viverra. Vivamus imperdiet posuere porta. Maecenas quis ornare lacus. Aliquam tortor nisi, finibus in tempor quis, imperdiet sit amet ante. Aenean quis eros tristique, cursus nisl quis, hendrerit nisi. Proin vestibulum semper blandit. Nullam bibendum nunc vitae aliquam vestibulum. Pellentesque leo sapien, porttitor in commodo at, suscipit at massa."
+                  }
+                ]
+              },
+              {
+                "_beagleComponent_": "custom:gridColumn",
+                "children": [
+                  {
+                    "_beagleComponent_": "custom:grid",
+                    "children": [
+                      {
+                        "_beagleComponent_": "custom:button",
+                        "appearance": "primary",
+                        "style": {
+                          "margin": "8px 24px 0 0"
+                        },
+                        "onClick": {
+                          "_beagleAction_": "custom:customAction",
+                          "msg": "Hey, I'm a custom action!"
+                        },
+                        "children": [
+                          {
+                            "_beagleComponent_": "beagle:text",
+                            "text": "Submit"
+                          }
+                        ]
+                      },
+                      {
+                        "_beagleComponent_": "custom:button",
+                        "style": {
+                          "marginTop": "8px"
+                        },
+                        "children": [
+                          {
+                            "_beagleComponent_": "beagle:text",
+                            "text": "Cancel"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
